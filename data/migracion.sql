@@ -1,0 +1,15 @@
+CREATE DATABASE pedidos_crud;
+
+use pedidos_crud;
+
+CREATE TABLE pedidos (
+  id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  ingredientes VARCHAR(30) NOT NULL,
+  tipo_masa VARCHAR(30) NOT NULL,
+  tamano VARCHAR(30) NOT NULL,
+  nombre VARCHAR(50) NOT NULL,
+  direccion VARCHAR(30) NOT NULL,
+  telefono  INT(10),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
